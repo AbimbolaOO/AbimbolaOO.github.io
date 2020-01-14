@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alien Abduction Order Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section>
+            <h1>Alien Abduction Order Form</h1>
+            <p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+            <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES
+			" method="POST">
+                <input type="hidden" id="myhidden" name="send_to" value="abimbolaolayemiwhyte@gmail.com">
+                <fieldset>
+
+                    <legend>Your contact information</legend>
+
+                    <label for="name">Your name</label><input type="text" id="name" name="name">
+
+                    <label for="phone">phone number</label><input type="tel" id="phone" name="phone" placeholder="don't forget you area code">
+
+                    <label for="email">email</label><input type="email" id="email" name="email">
+                </fieldset>
+
+                <fieldset>
+                    <legend>About your abduction </legend>
+
+                    <label for="date">Requested date</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="qty ">How many people would you like abducted?</label>
+                    <input type="number" id="qty" name="qty" min="1" max="10">
+
+                    <p>What type of UFO do you prefer?</p>
+
+                    <label>
+					<input type="radio" name="ufotype" value="classic" checked>Classic oval UFO
+					</label>
+
+                    <label>
+						<input type="radio" name="ufotype" value="starwars ">Star Wars-style Imperial cruiser
+					</label>
+
+                    <label>
+						<input type="radio" name="ufotype" value="galactica">Battlestar Galactica-style Viper
+					</label>
+
+                    <label>
+						<input type="radio" name="ufotype" value="borg">Borg-style cube
+					</label>
+
+                    <label for=abt>What type of abduction experience do you want?</label>
+                    <select id="abtype" name="select">
+						<option selected>select an option</option>
+                        <option value="tour">Tour of the solar system</option>
+                        <option value="dinner">Alien dinner and discussion</option>
+                        <option value="dance">Alien dance lessons</option>
+                        <option value="whales">Whale watching</option>
+					</select>
+
+                    <label for="comments">Special requests:</label>
+                    <textarea id="comments" name="comments" minlength="10" maxlength="100" rows="5" cols="33"> Enter your ideas</textarea>
+
+                    <label>
+					<input name="subscribe" type="checkbox" value="subscribe" checked>
+					Add me to your email list</label>
+                </fieldset>
+                <button type="submit">submit guys</button>
+            </form>
+        </section>
+        <aside>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31713.270706217107!2d3.3340895395507792!3d6.501567000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c164c9b1fd9%3A0xa23e7e0694392249!2sPrecinct%20Comfort%20Services%20Surulere!5e0!3m2!1sen!2sng!4v1579005889856!5m2!1sen!2sng"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <h3>Our Location</h3>
+            <address>
+				Frontend Masters &middot;
+				60 South 6th Street &middot;
+				Suite 3625 &middot;
+				Minneapolis, MN 55402
+			</address>
+        </aside>
+    </div>
+    <script src="js/forms.js"></script>
+</body>
+
+</html>
